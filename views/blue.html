@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>        
+    // if(BluetoothManager.getAdapter.BluetoothAdapter.enable()){
+    //     alert("turn on bluetooth")
+    // }
+    // else{
+    //     alert("connected successfully")
+    // }
+
+    const  ankit = async ()=>{
+        await navigator.bluetooth.requestDevice()
+    }
+
+    if(ankit()){
+        console.log("first")
+    }
+    else{console.log("second")}
+    console.log(navigator.bluetooth)
+
+    // const  mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();   
+</script>
